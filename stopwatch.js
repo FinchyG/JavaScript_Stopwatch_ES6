@@ -4,7 +4,7 @@ var minutes       = 0;
 var running       = 1;
 var interval;
 
-function stopwatch_start() {
+const stopwatch_start = () => {
 
     running++;
 
@@ -38,27 +38,33 @@ function stopwatch_start() {
 
 }
 
-function stopwatch_stop() {
+const stopwatch_stop = () => {
 
     clearInterval(interval);
     running = 1;
 
 }
 
-function reset() {
+const reset = () => {
 
-    var watch_display = document.getElementById("watch_display");
+    let watch_display = document.getElementById("watch_display");
     watch_display.innerHTML = "00:00:00";
+
+    let ul = document.getElementById("splits");
+
+        while( ul.firstChild ){
+            ul.removeChild( ul.firstChild );
+          }
 
     return centi_seconds = 0, seconds = 0, minutes = 0;
 
 }
 
-function split() {
+const split = () => {
 
-    var split_time = document.getElementById("watch_display").textContent;
-    var ul         = document.getElementById("splits");
-    var li         = document.createElement("li");
+    let split_time = document.getElementById("watch_display").textContent;
+    let ul         = document.getElementById("splits");
+    let li         = document.createElement("li");
     
     li.appendChild(document.createTextNode(split_time));
     ul.appendChild(li);
