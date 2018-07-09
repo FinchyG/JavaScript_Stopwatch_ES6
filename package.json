@@ -1,0 +1,22 @@
+{
+  "name": "javascript_stopwatch_es6",
+  "version": "1.0.0",
+  "description": "\"Description\"",
+  "main": "stopwatch.js",
+  "scripts": {
+    "test": "\"test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FinchyG/JavaScript_Stopwatch_ES6.git"
+  },
+  "author": "\"FinchyG\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FinchyG/JavaScript_Stopwatch_ES6/issues"
+  },
+  "homepage": "https://github.com/FinchyG/JavaScript_Stopwatch_ES6#readme",
+  "devDependencies": {
+    "eslint-config-airbnb": "^17.0.0"
+  }
+}
