@@ -4,7 +4,7 @@ var minutes       = 0;
 var running       = 1;
 var interval;
 
-const stopwatch_start = () => {
+const stopwatch_start = () => { // eslint-disable-line no-unused-vars
 
     running++;
 
@@ -38,14 +38,14 @@ const stopwatch_start = () => {
 
 }
 
-const stopwatch_stop = () => {
+const stopwatch_stop = () => { // eslint-disable-line no-unused-vars
 
     clearInterval(interval);
     running = 1;
 
 }
 
-const reset = () => {
+const reset = () => { // eslint-disable-line no-unused-vars
 
     let watch_display = document.getElementById("watch_display");
     watch_display.innerHTML = "00:00:00";
@@ -60,7 +60,7 @@ const reset = () => {
 
 }
 
-const split = () => {
+const split = () => { // eslint-disable-line no-unused-vars
 
     let split_time = document.getElementById("watch_display").textContent;
     let ul         = document.getElementById("splits");
