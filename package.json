@@ -18,7 +18,7 @@
   "homepage": "https://github.com/FinchyG/JavaScript_Stopwatch_ES6#readme",
   "devDependencies": {
     "eslint-config-airbnb": "^17.0.0",
-    "grunt": "^1.0.3",
+    "grunt": "^1.5.2",
     "grunt-contrib-cssmin": "^2.2.1",
     "grunt-contrib-uglify": "^3.3.0"
   }
